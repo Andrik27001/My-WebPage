@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
 
 $Color1: #1EBCBD;
 $Color2: #444;
@@ -10,4 +11,27 @@ $Color3: #FFF;
   padding: 0;
   font-family: 'Lato', sans-serif;
   list-style: none;
+}
+
+header {
+  nav {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    justify-content: space-between;
+    background-color: $Color3;
+    box-shadow: 0 0 10px 0 $Color2;
+    button {
+      border: none;
+    }
+    .iconify {
+      color: $Color2;
+    }
+    .icon-1 {
+      font-size: 24px;
+    }
+    .icon-2 {
+      font-size: 20px;
+    }
+  }
 }
