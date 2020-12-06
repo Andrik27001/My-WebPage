@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
 
-$Color1: #1EBCBD;
+$Color1: #5b1ebd;
 $Color2: #444;
-$Color3: #FFF;
+$Color3: #fff;
 
 * {
   box-sizing: border-box;
@@ -21,15 +21,19 @@ header {
     justify-content: space-between;
     background-color: $Color3;
     box-shadow: 0 0 10px 0 $Color2;
+
     button {
       border: none;
     }
+
     .iconify {
       color: $Color2;
     }
+
     .icon-1 {
       font-size: 24px;
     }
+
     .icon-2 {
       font-size: 20px;
     }
