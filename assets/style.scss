@@ -4,7 +4,7 @@
 $Color1: #5b1ebd;
 $Color2: #444;
 $Color3: #fff;
-
+$Color4: #18033a;
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,29 +13,52 @@ $Color3: #fff;
   list-style: none;
 }
 
-header {
-  nav {
-    display: flex;
-    align-items: center;
-    padding: 8px;
-    justify-content: space-between;
-    background-color: $Color3;
-    box-shadow: 0 0 10px 0 $Color2;
 
-    button {
-      border: none;
-    }
+nav {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  justify-content: space-between;
+  background-color: $Color3;
+  box-shadow: 0 0 10px 0 $Color2;
+}
 
-    .iconify {
-      color: $Color2;
-    }
-
-    .icon-1 {
-      font-size: 24px;
-    }
-
-    .icon-2 {
-      font-size: 20px;
+.nav-container {
+  background-color: $Color4;
+  font-size: 12px;
+  line-height: 37px;
+  padding: 25px 50px;
+  .button-links {
+    background-color: $Color4;
+    color: $Color3;
+    border: none;
+    border-bottom: 1px dotted $Color1;    
+  }
+  .button-link1 {
+    border-top: 1px dotted $Color1; 
+  }
+  ul {
+    margin: 0;
+    li {
+      margin: 0 0 0 20px;
+      border-bottom: 1px dotted $Color1;
     }
   }
+
+  a {
+    display: block;
+    color: $Color3;
+  }
+}
+
+.iconify {
+  color: $Color2;
+}
+
+.icon-1 {
+  font-size: 24px;
+}
+
+.icon-2 {
+  font-size: 20px;
 }

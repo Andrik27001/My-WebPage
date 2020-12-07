@@ -11,13 +11,22 @@
 <body>
   <header>
     <div class="fixed-top">
+      <nav>
+        <a href="index.html"><img src="./assets/Images/Logo.png" width="120" alt="Logo"></a>
+        <div>
+          <a href="#"><span class="iconify icon-1" data-icon="fa:shopping-cart" data-inline="false"></span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon iconify icon-2" data-icon="fa:bars" data-inline="false"></span>
+          </button>
+        </div>
+      </nav>
       <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark">
-          <div class="accordion" id="accordionExample">
+        <div class="nav-container">
+          <div class="accordion nav-content" id="accordionExample">
 
-            <div>
+            <div class="collapse-content">
               <div>
-                <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <button class="btn-block text-left button-links button-link1" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   Our Services
                 </button>
               </div>
@@ -33,9 +42,9 @@
               </div>
             </div>
 
-            <div>
+            <div class="collapse-content">
               <div>
-                <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <button class="btn-block text-left button-links" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   About Us
                 </button>
               </div>
@@ -53,13 +62,13 @@
               </div>
             </div>
 
-            <div>
+            <div class="collapse-content">
               <div>
-                <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <button class="btn-block text-left button-links" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   More Games
                 </button>
               </div>
-              <div id="collapseThree" class="collapse" data-parent="#accordionExample">
+              <div id="collapseThree" data-parent="#accordionExample">
                 <div>
                   <ul>
                     <li><a href="#">Apex Legends</a></li>
@@ -71,9 +80,9 @@
               </div>
             </div>
             
-            <div>
+            <div class="collapse-content">
               <div>
-                <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <button class="btn-block text-left button-links" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                   Contact
                 </button>
               </div>
@@ -87,30 +96,21 @@
               </div>
             </div>
             
-            <div>
-              <a href="#">Reviews</a>
+            <div class="button-links">
+                <a href="#">Reviews</a>
             </div>
             
-            <div>
+            <div class="button-links">
               <a href="#">Hall of Fame</a>
             </div>
 
-            <div>
+            <div class="button-links">
               <a href="#">Login</a>
             </div>
 
           </div>
         </div>
       </div>
-      <nav>
-        <a href="#"><img src="./assets/Images/Logo.png" width="120" alt="Logo"></a>
-        <div>
-          <a href="#"><span class="iconify icon-1" data-icon="fa:shopping-cart" data-inline="false"></span></a>
-          <button type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="iconify icon-2" data-icon="fa:bars" data-inline="false"></span>
-          </button>
-        </div>
-      </nav>
     </div>
 
     <nav class="d-none d-md-block">
