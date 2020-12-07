@@ -15,15 +15,19 @@ $Color4: #18033a;
 }
 
 nav {
-  display: flex;
-  align-items: center;
-  padding: 8px;
-  justify-content: space-between;
   background-color: $Color3;
   box-shadow: 0 0 10px 0 $Color2;
+  padding: 10px;
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90vw;
+  }
 }
 
-.nav-container {
+.nav-content {
   background-color: $Color4;
   font-size: 12px;
   line-height: 37px;
@@ -55,8 +59,26 @@ nav {
   }
 }
 
+.search {
+  background-color: $Color3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 50vw;
+  border-radius: 5px;
+  input {
+    border: none;
+    padding: 0 0 0 10px;
+    width: 100vw;
+    border-radius: 0 5px 5px 0;
+  }
+}
+
 .iconify {
-  color: $Color2;
+  color: $Color2; 
+  font-size: 20px;
+  margin: 0 0 0 8px;
 }
 
 .icon-1 {

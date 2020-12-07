@@ -12,102 +12,108 @@
   <header>
     <div class="fixed-top">
       <nav>
-        <a href="index.html"><img src="./assets/Images/Logo.png" width="120" alt="Logo"></a>
-        <div>
-          <a href="#"><span class="iconify icon-1" data-icon="fa:shopping-cart" data-inline="false"></span></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon iconify icon-2" data-icon="fa:bars" data-inline="false"></span>
-          </button>
+        <div class="nav-container">
+          <div class="nav-img">
+            <a href="index.html"><img src="./assets/Images/Logo.png" width="120" alt="Logo"></a>
+          </div>
+          <div class="nav-icons">
+            <a href="#"><span class="iconify icon-1" data-icon="fa:shopping-cart" data-inline="false"></span></a>
+            <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon iconify icon-2" data-icon="fa:bars" data-inline="false"></span>
+            </button>
+          </div>
         </div>
       </nav>
       <div class="collapse" id="navbarToggleExternalContent">
-        <div class="nav-container">
-          <div class="accordion nav-content" id="accordionExample">
+        <div class="accordion nav-content" id="accordionExample">
 
-            <div class="collapse-content">
+          <div class="collapse-content">
+            <div>
+              <button class="btn-block text-left button-links button-link1" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Our Services
+              </button>
+            </div>
+            <div id="collapseOne" class="collapse" data-parent="#accordionExample">
               <div>
-                <button class="btn-block text-left button-links button-link1" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Our Services
-                </button>
-              </div>
-              <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
-                <div>
-                  <ul>
-                    <li><a href="#">Solo & Duo Storm League Boosting</a></li>
-                    <li><a href="#">Hero Leveling</a></li>
-                    <li><a href="#">Coaching</a></li>
-                    <li><a href="#">Account Shop</a></li>
-                  </ul>
-                </div>
+                <ul>
+                  <li><a href="#">Solo & Duo Storm League Boosting</a></li>
+                  <li><a href="#">Hero Leveling</a></li>
+                  <li><a href="#">Coaching</a></li>
+                  <li><a href="#">Account Shop</a></li>
+                </ul>
               </div>
             </div>
+          </div>
 
-            <div class="collapse-content">
+          <div class="collapse-content">
+            <div>
+              <button class="btn-block text-left button-links" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                About Us
+              </button>
+            </div>
+            <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
               <div>
-                <button class="btn-block text-left button-links" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  About Us
-                </button>
-              </div>
-              <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
-                <div>
-                  <ul>
-                    <li><a href="#">Why Us?</a>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Terms of Use</a></li>
-                    <li><a href="#">Refund Policy</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                  </ul>
-                </div>
+                <ul>
+                  <li><a href="#">Why Us?</a>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Terms of Use</a></li>
+                  <li><a href="#">Refund Policy</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
               </div>
             </div>
+          </div>
 
-            <div class="collapse-content">
+          <div class="collapse-content">
+            <div>
+              <button class="btn-block text-left button-links" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                More Games
+              </button>
+            </div>
+            <div id="collapseThree" class="collapse" data-parent="#accordionExample">
               <div>
-                <button class="btn-block text-left button-links" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  More Games
-                </button>
-              </div>
-              <div id="collapseThree" data-parent="#accordionExample">
-                <div>
-                  <ul>
-                    <li><a href="#">Apex Legends</a></li>
-                    <li><a href="#">LoL</a></li>
-                    <li><a href="#">Overwatch</a></li>
-                    <li><a href="#">CoD: Modern Warfare</a></li>
-                  </ul>
-                </div>
+                <ul>
+                  <li><a href="#">Apex Legends</a></li>
+                  <li><a href="#">LoL</a></li>
+                  <li><a href="#">Overwatch</a></li>
+                  <li><a href="#">CoD: Modern Warfare</a></li>
+                </ul>
               </div>
             </div>
-            
-            <div class="collapse-content">
+          </div>
+          
+          <div class="collapse-content">
+            <div>
+              <button class="btn-block text-left button-links" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Contact
+              </button>
+            </div>
+            <div id="collapseFour" class="collapse" data-parent="#accordionExample">
               <div>
-                <button class="btn-block text-left button-links" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  Contact
-                </button>
-              </div>
-              <div id="collapseFour" class="collapse" data-parent="#accordionExample">
-                <div>
-                  <ul>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Become a Booster</a></li>
-                  </ul>
-                </div>
+                <ul>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Become a Booster</a></li>
+                </ul>
               </div>
             </div>
-            
-            <div class="button-links">
-                <a href="#">Reviews</a>
-            </div>
-            
-            <div class="button-links">
-              <a href="#">Hall of Fame</a>
-            </div>
+          </div>
+          
+          <div class="button-links">
+              <a href="#">Reviews</a>
+          </div>
+          
+          <div class="button-links">
+            <a href="#">Hall of Fame</a>
+          </div>
 
-            <div class="button-links">
-              <a href="#">Login</a>
-            </div>
+          <div class="button-links">
+            <a href="#">Login</a>
+          </div>
 
+          <div class="search">
+            <span class="iconify icon-3" data-icon="bx:bx-search-alt-2" data-inline="false"></span>
+            <input type="text" name="search" placeholder="Search...">
           </div>
         </div>
       </div>
