@@ -18,6 +18,7 @@ nav {
   background-color: $Color3;
   box-shadow: 0 0 10px 0 $Color2;
   padding: 10px;
+
   .nav-container {
     display: flex;
     align-items: center;
@@ -67,6 +68,7 @@ nav {
   margin: 0 auto;
   width: 50vw;
   border-radius: 5px;
+
   input {
     border: none;
     padding: 0 0 0 10px;
@@ -76,7 +78,7 @@ nav {
 }
 
 .iconify {
-  color: $Color2; 
+  color: $Color2;
   font-size: 20px;
   margin: 0 0 0 8px;
 }
