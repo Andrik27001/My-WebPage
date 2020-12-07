@@ -5,6 +5,7 @@ $Color1: #5b1ebd;
 $Color2: #444;
 $Color3: #fff;
 $Color4: #18033a;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +13,6 @@ $Color4: #18033a;
   font-family: 'Lato', sans-serif;
   list-style: none;
 }
-
 
 nav {
   display: flex;
@@ -28,17 +28,21 @@ nav {
   font-size: 12px;
   line-height: 37px;
   padding: 25px 50px;
+
   .button-links {
     background-color: $Color4;
     color: $Color3;
     border: none;
-    border-bottom: 1px dotted $Color1;    
+    border-bottom: 1px dotted $Color1;
   }
+
   .button-link1 {
-    border-top: 1px dotted $Color1; 
+    border-top: 1px dotted $Color1;
   }
+
   ul {
     margin: 0;
+
     li {
       margin: 0 0 0 20px;
       border-bottom: 1px dotted $Color1;
@@ -57,8 +61,4 @@ nav {
 
 .icon-1 {
   font-size: 24px;
-}
-
-.icon-2 {
-  font-size: 20px;
 }
