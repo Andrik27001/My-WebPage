@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-$Color1: #24d893;
-$Color2: #444;
-$Color3: #fff;
+$Color1: #ec5242;
+$Color2: #272a31;
+$Color3: #f1f1f1;
 
 * {
   box-sizing: border-box;
@@ -10,6 +10,12 @@ $Color3: #fff;
   padding: 0;
   font-family: 'Lato', sans-serif;
   list-style: none;
+}
+
+main {
+  margin-top: 82px;
+  text-align: center;
+  color: $Color2;
 }
 
 nav {
@@ -27,13 +33,13 @@ nav {
 }
 
 .nav-content {
-  background-color: #24d893;
+  background-color: $Color2;
   font-size: 12px;
   line-height: 37px;
   padding: 25px 50px;
 
   .button-links {
-    background-color: $Color1;
+    background-color: $Color2;
     color: $Color3;
     border: none;
     border-bottom: 1px dotted $Color3;
@@ -84,14 +90,48 @@ nav {
   font-size: 24px;
 }
 
-main {
-  margin-top: 82px;
-}
-
-.first_section {
+.first_sec {
   background-image: url(/assets/Images/Galaxy-background.jpg);
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
   height: 600px;
+}
+
+.second-sec {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 35px;
+    color: $Color1;
+  }
+
+  h3 {
+    font-size: 35px;
+  }
+}
+
+.features {
+  h4 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .iconify {
+    font-size: 35px;
+    color: $Color1;
+  }
+}
+
+.main_buttons {
+  font-size: 13px;
+  font-weight: 600;
+  color: $Color3;
+  background-color: $Color1;
+  padding: 15px 22px;
+  border: none;
+  box-shadow: 0px 2px 5px 0 #fc3721;
+  border-radius: 8px;
 }
