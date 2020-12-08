@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
 
-$Color1: #5b1ebd;
+$Color1: #ec5242;
 $Color2: #444;
 $Color3: #fff;
-$Color4: #18033a;
 
 * {
   box-sizing: border-box;
@@ -29,20 +28,20 @@ nav {
 }
 
 .nav-content {
-  background-color: $Color4;
+  background-color: $Color1;
   font-size: 12px;
   line-height: 37px;
   padding: 25px 50px;
 
   .button-links {
-    background-color: $Color4;
+    background-color: $Color1;
     color: $Color3;
     border: none;
-    border-bottom: 1px dotted $Color1;
+    border-bottom: 1px dotted $Color3;
   }
 
   .button-link1 {
-    border-top: 1px dotted $Color1;
+    border-top: 1px dotted $Color3;
   }
 
   ul {
@@ -50,7 +49,7 @@ nav {
 
     li {
       margin: 0 0 0 20px;
-      border-bottom: 1px dotted $Color1;
+      border-bottom: 1px dotted $Color3;
     }
   }
 
@@ -80,7 +79,6 @@ nav {
 .iconify {
   color: $Color2;
   font-size: 20px;
-  margin: 0 0 0 8px;
 }
 
 .icon-1 {
