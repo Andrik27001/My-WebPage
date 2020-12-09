@@ -85,13 +85,17 @@ nav {
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
-  h1, h2 {
+
+  h1,
+  h2 {
     margin: 0;
     font-weight: bold;
   }
+
   h1 {
     font-size: 3rem;
   }
+
   h2 {
     font-size: 1rem;
   }
@@ -140,9 +144,11 @@ nav {
 @media only screen and (min-width: 480px) {
   .first-sec {
     padding: 80px 34px 250px;
+
     h1 {
       font-size: 4.5rem;
     }
+
     h2 {
       font-size: 1.5rem;
     }
