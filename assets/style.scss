@@ -39,6 +39,7 @@ nav {
   background-color: #18191d;
   padding: 20px 60px;
   line-height: 40px;
+
   a {
     display: flex;
     justify-content: space-between;
@@ -47,13 +48,16 @@ nav {
     border-bottom: 1px dotted $light-color;
     transition: 500ms;
   }
+
   a:hover {
     color: $hover-color;
     text-decoration: none;
   }
+
   li {
     margin-left: 10px;
   }
+
   input {
     margin: 15px 0 0 0;
     border: none;
