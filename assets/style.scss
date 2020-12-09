@@ -1,13 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-$main-color: #7816e9;
+$main-color: #b04fff;
 $text-color: #272a31;
-$rainbow: linear-gradient(90deg, rgba(21, 211, 214, 0.822) 0%, rgb(71, 0, 202) 49%, rgba(255, 0, 251, 0.644) 98%);
+$rainbow: linear-gradient(90deg, rgb(21, 211, 214) 0%, rgb(71, 0, 202) 49%, rgba(255, 0, 251, 0.644) 98%);
 $white: #fff;
-$light-color: #adadad65;
+$light-color: #7c7c7c;
 $shadow-color1: #4510c2;
 $shadow-color2: #888;
-$hover-color: #9542f5;
+
+@mixin flex($content, $direction) {
+  display: flex;
+  align-items: center;
+  justify-content: $content;
+  flex-direction: $direction;
+}
+
+@mixin margin($width){
+  margin: 0 auto;
+  width: $width;
+}
 
 * {
   box-sizing: border-box;
@@ -22,62 +33,70 @@ main {
   text-align: center;
   color: $text-color;
 }
-
 nav {
   background-color: $white;
   box-shadow: 0 1px 10px $shadow-color2;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
+}
+.mobile-nav {
+  background-color: $white;
+  @include margin(80vw);
+  @include flex(space-between, row);
+  button {
+    margin-left: 12px;
+  }
   .iconify {
     color: $text-color;
-    font-size: 25px;
+    font-size: 24px;
   }
 }
 
 .nav-content {
-  background-color: #18191d;
+  background-image: url(/assets/Images/Galaxy-background2.jpg);
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
   padding: 20px 60px;
-  line-height: 40px;
+  .iconify {
+    color: $main-color;
+  }
 
   a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: $main-color;
-    border-bottom: 1px dotted $light-color;
+    @include flex(space-between, row);
+    color: $white;
+    padding: 10px;
+    border-bottom: 1px dotted $main-color;
     transition: 500ms;
+    &:hover {
+      color: $white;
+      text-decoration: none;
+    }
   }
-
-  a:hover {
-    color: $hover-color;
-    text-decoration: none;
-  }
+  
 
   li {
     margin-left: 10px;
   }
 
   input {
+    color: $white;
     margin: 15px 0 0 0;
     border: none;
     width: 100%;
-    padding: 5px 5px 5px 40px;
+    padding: 12px 12px 12px 40px;
     border-radius: 5px;
-    background-color: #0000004f;
+    background-color: #0000005b;
     background-image: url(/assets/Images/Sauron.png);
-    background-size: 30px;
-    background-position: 6px center;
+    background-size: 22px;
+    background-position: 10px center;
     background-repeat: no-repeat;
+    &::placeholder, &:placeholder-shown {
+      color: $main-color;
+    }
   }
 }
 
 .first-sec {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  @include flex(space-around, column);
   color: $white;
   padding: 80px 34px 210px;
   height: 600px;
@@ -85,19 +104,15 @@ nav {
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
-
-  h1,
-  h2 {
+  h1, h2 {
     margin: 0;
     font-weight: bold;
   }
-
   h1 {
     font-size: 3rem;
   }
-
   h2 {
-    font-size: 1rem;
+    font-size: 1.03rem;
   }
 }
 
@@ -108,18 +123,22 @@ nav {
   color: transparent;
 }
 
-.second-sec {
+.second-sec-headers {
+  @include margin(80%);
   h1 {
-    font-size: 24px;
+    line-height: 30px;
+    font-size: 1.5rem;
   }
 
   h2 {
-    font-size: 35px;
+    line-height: 50px;
+    font-size: 2.2rem;
     color: $main-color;
   }
 
   h3 {
-    font-size: 35px;
+    line-height: 50px;
+    font-size: 2.2rem;
   }
 }
 
@@ -144,11 +163,9 @@ nav {
 @media only screen and (min-width: 480px) {
   .first-sec {
     padding: 80px 34px 250px;
-
     h1 {
       font-size: 4.5rem;
     }
-
     h2 {
       font-size: 1.5rem;
     }
