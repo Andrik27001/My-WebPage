@@ -2,6 +2,7 @@
 
 $main-color: #7816e9;
 $text-color: #272a31;
+$rainbow: linear-gradient(90deg, rgba(21, 211, 214, 0.822) 0%, rgb(71, 0, 202) 49%, rgba(255, 0, 251, 0.644) 98%);
 $white: #fff;
 $light-color: #adadad65;
 $shadow-color1: #4510c2;
@@ -24,7 +25,7 @@ main {
 
 nav {
   background-color: $white;
-  box-shadow: 0 1px 12px $shadow-color2;
+  box-shadow: 0 1px 10px $shadow-color2;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -73,11 +74,34 @@ nav {
 }
 
 .first-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: $white;
+  padding: 80px 34px 210px;
+  height: 600px;
   background-image: url(/assets/Images/Galaxy-background.jpg);
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
-  height: 600px;
+  h1, h2 {
+    margin: 0;
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+.rainbow-title {
+  background: $rainbow;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .second-sec {
@@ -103,12 +127,24 @@ nav {
 }
 
 .main-buttons {
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 0.9rem;
   color: $white;
-  background-color: $main-color;
+  background: $rainbow;
   padding: 15px 22px;
   border: none;
-  box-shadow: 0 2px 5px 0 $shadow-color1;
-  border-radius: 8px;
+  box-shadow: 0 2px 2px 0 $shadow-color1;
+  border-radius: 5px;
+  letter-spacing: 2px;
+}
+
+@media only screen and (min-width: 480px) {
+  .first-sec {
+    padding: 80px 34px 250px;
+    h1 {
+      font-size: 4.5rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
 }
