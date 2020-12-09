@@ -15,7 +15,7 @@ $shadow-color2: #888;
   flex-direction: $direction;
 }
 
-@mixin margin($width){
+@mixin margin($width) {
   margin: 0 auto;
   width: $width;
 }
@@ -33,17 +33,22 @@ main {
   text-align: center;
   color: $text-color;
 }
+
 nav {
   background-color: $white;
   box-shadow: 0 1px 10px $shadow-color2;
 }
+
 .mobile-nav {
   background-color: $white;
+
   @include margin(80vw);
   @include flex(space-between, row);
+
   button {
     margin-left: 12px;
   }
+
   .iconify {
     color: $text-color;
     font-size: 24px;
@@ -56,22 +61,24 @@ nav {
   background-position: 50%;
   background-repeat: no-repeat;
   padding: 20px 60px;
+
   .iconify {
     color: $main-color;
   }
 
   a {
     @include flex(space-between, row);
+
     color: $white;
     padding: 10px;
     border-bottom: 1px dotted $main-color;
     transition: 500ms;
+
     &:hover {
       color: $white;
       text-decoration: none;
     }
   }
-  
 
   li {
     margin-left: 10px;
@@ -89,7 +96,9 @@ nav {
     background-size: 22px;
     background-position: 10px center;
     background-repeat: no-repeat;
-    &::placeholder, &:placeholder-shown {
+
+    &::placeholder,
+    &:placeholder-shown {
       color: $main-color;
     }
   }
@@ -97,6 +106,7 @@ nav {
 
 .first-sec {
   @include flex(space-around, column);
+
   color: $white;
   padding: 80px 34px 210px;
   height: 600px;
@@ -104,13 +114,17 @@ nav {
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
-  h1, h2 {
+
+  h1,
+  h2 {
     margin: 0;
     font-weight: bold;
   }
+
   h1 {
     font-size: 3rem;
   }
+
   h2 {
     font-size: 1.03rem;
   }
@@ -125,6 +139,7 @@ nav {
 
 .second-sec-headers {
   @include margin(80%);
+
   h1 {
     line-height: 30px;
     font-size: 1.5rem;
@@ -163,9 +178,11 @@ nav {
 @media only screen and (min-width: 480px) {
   .first-sec {
     padding: 80px 34px 250px;
+
     h1 {
       font-size: 4.5rem;
     }
+
     h2 {
       font-size: 1.5rem;
     }
