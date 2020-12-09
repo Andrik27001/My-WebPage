@@ -36,9 +36,9 @@ nav {
 }
 
 .nav-content {
-  background-color: #272a31;
+  background-color: #18191d;
   padding: 20px 60px;
-  line-height: 30px;
+  line-height: 40px;
   a {
     display: flex;
     justify-content: space-between;
@@ -54,10 +54,18 @@ nav {
   li {
     margin-left: 10px;
   }
-}
-
-.link1 {
-  border-top: 1px dotted $light-color;
+  input {
+    margin: 15px 0 0 0;
+    border: none;
+    width: 100%;
+    padding: 5px 5px 5px 40px;
+    border-radius: 5px;
+    background-color: #0000004f;
+    background-image: url(/assets/Images/Sauron.png);
+    background-size: 30px;
+    background-position: 6px center;
+    background-repeat: no-repeat;
+  }
 }
 
 .first-sec {
