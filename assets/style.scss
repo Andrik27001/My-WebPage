@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-$Color1: #7816e9;
-$Color2: #272a31;
-$Color3: #f1f1f1;
+$main-color: #7816e9;
+$text-color: #272a31;
+$white: #fff;
+$light-color: #adadad65;
+$shadow-color1: #4510c2;
+$shadow-color2: #888;
+$hover-color: #9542f5;
 
 * {
   box-sizing: border-box;
@@ -13,84 +17,50 @@ $Color3: #f1f1f1;
 }
 
 main {
-  margin-top: 82px;
+  margin-top: 70px;
   text-align: center;
-  color: $Color2;
+  color: $text-color;
 }
 
 nav {
-  background-color: $Color3;
-  box-shadow: 0 0 10px 0 $Color2;
-  padding: 10px;
+  background-color: $white;
+  box-shadow: 0 1px 12px $shadow-color2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-  .nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 90vw;
+  .iconify {
+    color: $text-color;
+    font-size: 25px;
   }
 }
 
 .nav-content {
-  background-color: $Color2;
-  font-size: 12px;
-  line-height: 37px;
-  padding: 25px 50px;
-
-  .button-links {
-    background-color: $Color2;
-    color: $Color3;
-    border: none;
-    border-bottom: 1px dotted $Color3;
-  }
-
-  .button-link1 {
-    border-top: 1px dotted $Color3;
-  }
-
-  ul {
-    margin: 0;
-
-    li {
-      margin: 0 0 0 20px;
-      border-bottom: 1px dotted $Color3;
-    }
-  }
-
+  background-color: #272a31;
+  padding: 20px 60px;
+  line-height: 30px;
   a {
-    display: block;
-    color: $Color3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $main-color;
+    border-bottom: 1px dotted $light-color;
+    transition: 500ms;
+  }
+  a:hover {
+    color: $hover-color;
+    text-decoration: none;
+  }
+  li {
+    margin-left: 10px;
   }
 }
 
-.search {
-  background-color: $Color3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 50vw;
-  border-radius: 5px;
-
-  input {
-    border: none;
-    padding: 0 0 0 10px;
-    width: 100vw;
-    border-radius: 0 5px 5px 0;
-  }
+.link1 {
+  border-top: 1px dotted $light-color;
 }
 
-.iconify {
-  color: $Color2;
-  font-size: 20px;
-}
-
-.icon-1 {
-  font-size: 24px;
-}
-
-.first_sec {
+.first-sec {
   background-image: url(/assets/Images/Galaxy-background.jpg);
   background-size: cover;
   background-position: 50%;
@@ -105,7 +75,7 @@ nav {
 
   h2 {
     font-size: 35px;
-    color: $Color1;
+    color: $main-color;
   }
 
   h3 {
@@ -118,20 +88,15 @@ nav {
     font-size: 18px;
     font-weight: bold;
   }
-
-  .iconify {
-    font-size: 35px;
-    color: $Color1;
-  }
 }
 
-.main_buttons {
+.main-buttons {
   font-size: 13px;
   font-weight: 600;
-  color: $Color3;
-  background-color: $Color1;
+  color: $white;
+  background-color: $main-color;
   padding: 15px 22px;
   border: none;
-  box-shadow: 0 2px 5px 0 #4510c2;
+  box-shadow: 0 2px 5px 0 $shadow-color1;
   border-radius: 8px;
 }
