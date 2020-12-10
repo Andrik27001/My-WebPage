@@ -67,6 +67,7 @@ nav {
 
   a {
     @include flex(space-between, row);
+
     color: $white;
     padding: 10px 0;
     border-bottom: 1px dotted $main-color;
@@ -103,6 +104,7 @@ nav {
 
 .first-sec {
   @include flex(space-around, column);
+
   color: $white;
   padding: 80px 35px 200px;
   height: 600px;
@@ -131,13 +133,16 @@ nav {
 
 .second-sec-headers {
   @include margin(80%);
+
   padding: 70px 0 35px;
+
   h1 {
     line-height: 30px;
     font-size: 1.5rem;
   }
 
-  h2, h3 {
+  h2,
+  h3 {
     line-height: 50px;
     font-size: 2.2rem;
   }
@@ -146,15 +151,19 @@ nav {
 .feature-sec {
   @include flex(center, column);
   @include margin(70%);
+
   color: $light-color;
+
   h4 {
     font-size: 1.1rem;
     font-weight: bold;
     margin: 0;
   }
+
   p {
     padding: 0 0 20px;
   }
+
   .iconify {
     font-size: 35px;
     width: 35px;
