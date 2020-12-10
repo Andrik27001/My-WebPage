@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 $main-color: #b04fff;
-$text-color: #272a31;
+$text-color: #313338;
 $rainbow: linear-gradient(90deg, rgb(21, 211, 214) 0%, rgb(71, 0, 202) 49%, rgba(255, 0, 251, 0.644) 98%);
 $white: #fff;
-$light-color: #7c7c7c;
-$shadow-color1: #4510c2;
+$light-color: #676767;
 $shadow-color2: #888;
 
 @mixin flex($content, $direction) {
@@ -68,25 +67,23 @@ nav {
 
   a {
     @include flex(space-between, row);
-
     color: $white;
-    padding: 10px;
+    padding: 10px 0;
     border-bottom: 1px dotted $main-color;
     transition: 500ms;
 
     &:hover {
-      color: $white;
+      color: $main-color;
       text-decoration: none;
     }
   }
 
   li {
-    margin-left: 10px;
+    margin-left: 20px;
   }
 
   input {
     color: $white;
-    margin: 15px 0 0 0;
     border: none;
     width: 100%;
     padding: 12px 12px 12px 40px;
@@ -106,27 +103,22 @@ nav {
 
 .first-sec {
   @include flex(space-around, column);
-
   color: $white;
-  padding: 80px 34px 210px;
+  padding: 80px 35px 200px;
   height: 600px;
   background-image: url(/assets/Images/Galaxy-background.jpg);
   background-size: cover;
   background-position: 50%;
-  background-repeat: no-repeat;
 
   h1,
   h2 {
-    margin: 0;
     font-weight: bold;
-  }
-
-  h1 {
     font-size: 3rem;
   }
 
   h2 {
-    font-size: 1.03rem;
+    font-size: 1rem;
+    letter-spacing: 2px;
   }
 }
 
@@ -139,29 +131,41 @@ nav {
 
 .second-sec-headers {
   @include margin(80%);
-
+  padding: 70px 0 35px;
   h1 {
     line-height: 30px;
     font-size: 1.5rem;
   }
 
-  h2 {
-    line-height: 50px;
-    font-size: 2.2rem;
-    color: $main-color;
-  }
-
-  h3 {
+  h2, h3 {
     line-height: 50px;
     font-size: 2.2rem;
   }
 }
 
-.features {
+.feature-sec {
+  @include flex(center, column);
+  @include margin(70%);
+  color: $light-color;
   h4 {
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: bold;
+    margin: 0;
   }
+  p {
+    padding: 0 0 20px;
+  }
+  .iconify {
+    font-size: 35px;
+    width: 35px;
+    height: 35px;
+    margin: 0 3% 0 0;
+    color: $main-color;
+  }
+}
+
+.features {
+  @include flex(center, row);
 }
 
 .main-buttons {
@@ -170,7 +174,6 @@ nav {
   background: $rainbow;
   padding: 15px 22px;
   border: none;
-  box-shadow: 0 2px 2px 0 $shadow-color1;
   border-radius: 5px;
   letter-spacing: 2px;
 }
