@@ -27,6 +27,13 @@ $shadow-color2: #888;
   list-style: none;
 }
 
+a {
+  transition: all 0.3s ease 0s;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 main {
   margin-top: 70px;
   text-align: center;
@@ -57,9 +64,10 @@ nav {
 .nav-content {
   background-image: url(/assets/Images/Galaxy-background2.jpg);
   background-size: cover;
-  background-position: 50%;
+  background-position: 25%;
   background-repeat: no-repeat;
-  padding: 40px 60px 70px;
+  border-bottom: 1px solid $main-color;
+  padding: 40px 45px 45px;
 
   .iconify {
     color: $main-color;
@@ -71,11 +79,9 @@ nav {
     color: $white;
     padding: 10px 0;
     border-bottom: 1px dotted $main-color;
-    transition: 500ms;
 
     &:hover {
       color: $main-color;
-      text-decoration: none;
     }
   }
 
@@ -87,26 +93,25 @@ nav {
     color: $white;
     border: none;
     width: 100%;
-    padding: 12px 12px 12px 40px;
+    margin: 15px 0 0 0;
+    padding: 15px 15px 15px 45px;
     border-radius: 5px;
     background-color: #0000005b;
     background-image: url(/assets/Images/Sauron.png);
-    background-size: 22px;
+    background-size: 25px;
     background-position: 10px center;
     background-repeat: no-repeat;
 
-    &::placeholder,
-    &:placeholder-shown {
+    &::placeholder {
       color: $main-color;
     }
   }
 }
 
 .first-sec {
-  @include flex(space-around, column);
-
+  @include flex(center, column);
   color: $white;
-  padding: 100px 35px 300px;
+  padding: 100px 45px 300px;
   height: 700px;
   background-image: url(/assets/Images/Galaxy-background.jpg);
   background-size: cover;
@@ -116,13 +121,13 @@ nav {
   h1,
   h2 {
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 45px;
     text-shadow: 1px 1px 5px $text-color;
   }
 
   h2 {
-    font-size: 1rem;
-    letter-spacing: 2px;
+    font-size: 14px;
+    letter-spacing: 1px;
   }
 
   span {
@@ -185,7 +190,9 @@ nav {
 
 .third-sec {
   @include flex(center, column);
-
+  h2 {
+    font-size: 38px;
+  }
   background-image: url(/assets/Images/Kael-background.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -196,11 +203,48 @@ nav {
   text-shadow: 1px 1px 5px $text-color;
 }
 
+.fourth-sec {
+  font-size: 20px;
+  h2 {
+    font-size: 35px;
+  }
+  p {
+    font-weight: bold;
+  }
+
+  a {
+    font-weight: normal;
+    font-style: italic;
+    color: $text-color;
+    &:hover {
+      background-color: $main-color;
+      color: $white;
+    }
+  }
+  .rating {
+    span {
+      font-weight: normal;
+    }
+  }
+}
+
+.boosters {
+  @include flex(center, column)
+}
+
+.booster {
+  @include flex(space-around, column);
+  background-color: $main-color;
+  border-radius: 20px;
+}
+
+
 .main-buttons {
   font-size: 0.9rem;
   color: $white;
   background: $rainbow;
   padding: 15px 22px;
+  margin: 16px 0;
   border: none;
   border-radius: 5px;
   letter-spacing: 2px;
