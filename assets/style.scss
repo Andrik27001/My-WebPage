@@ -29,6 +29,7 @@ $shadow-color2: #888;
 
 a {
   transition: all 0.3s ease 0s;
+
   &:hover {
     text-decoration: none;
   }
@@ -52,7 +53,7 @@ nav {
   @include flex(space-between, row);
 
   button {
-    margin-left: 12px;
+    margin-left: 14px;
   }
 
   .iconify {
@@ -79,10 +80,6 @@ nav {
     color: $white;
     padding: 10px 0;
     border-bottom: 1px dotted $main-color;
-
-    &:hover {
-      color: $main-color;
-    }
   }
 
   li {
@@ -110,6 +107,7 @@ nav {
 
 .first-sec {
   @include flex(center, column);
+
   color: $white;
   padding: 100px 45px 300px;
   height: 700px;
@@ -190,9 +188,11 @@ nav {
 
 .third-sec {
   @include flex(center, column);
+
   h2 {
     font-size: 38px;
   }
+
   background-image: url(/assets/Images/Kael-background.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -205,39 +205,38 @@ nav {
 
 .fourth-sec {
   font-size: 20px;
-  h2 {
-    font-size: 35px;
-  }
-  p {
-    font-weight: bold;
-  }
 
   a {
     font-weight: normal;
     font-style: italic;
     color: $text-color;
-    &:hover {
-      background-color: $main-color;
-      color: $white;
-    }
   }
-  .rating {
-    span {
-      font-weight: normal;
-    }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  p {
+    font-weight: bold;
+  }
+}
+
+.rating {
+  span {
+    font-weight: normal;
   }
 }
 
 .boosters {
-  @include flex(center, column)
+  @include flex(center, column);
 }
 
 .booster {
   @include flex(space-around, column);
+
   background-color: $main-color;
   border-radius: 20px;
 }
-
 
 .main-buttons {
   font-size: 0.9rem;
@@ -248,6 +247,15 @@ nav {
   border: none;
   border-radius: 5px;
   letter-spacing: 2px;
+}
+
+.fourth-sec a:hover {
+  background-color: $main-color;
+  color: $white;
+}
+
+.nav-content a:hover {
+  color: $main-color;
 }
 
 @media only screen and (min-width: 480px) {
