@@ -110,7 +110,7 @@ nav {
 
   color: $white;
   padding: 100px 45px 300px;
-  height: 700px;
+  height: 750px;
   background-image: url(/assets/Images/Galaxy-background.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -197,7 +197,7 @@ nav {
   background-size: cover;
   background-attachment: fixed;
   background-position: right;
-  height: 700px;
+  height: 600px;
   color: $white;
   padding: 20px;
   text-shadow: 1px 1px 5px $text-color;
@@ -247,6 +247,23 @@ nav {
   border: none;
   border-radius: 5px;
   letter-spacing: 2px;
+}
+
+.fifth-sec {
+  @include flex(center, column);
+
+  background-image: url(/assets/Images/Alarak-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 25%;
+  height: 750px;
+  color: $white;
+  padding: 20px;
+  text-shadow: 1px 1px 5px $text-color;
+
+  h2 {
+    font-size: 38px;
+  }
 }
 
 .fourth-sec a:hover {
