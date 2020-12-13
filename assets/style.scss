@@ -70,12 +70,10 @@ nav {
   background-size: cover;
   background-position: 30%;
   padding: 46px;
-    
+
   .iconify {
     color: $main-color;
   }
-
-  
 
   a {
     @include flex(space-between, row);
@@ -102,7 +100,8 @@ nav {
     background-position: 10px center;
     background-repeat: no-repeat;
 
-    &::placeholder, &:placeholder-shown {
+    &::placeholder,
+    &:placeholder-shown {
       color: $main-color;
     }
   }
