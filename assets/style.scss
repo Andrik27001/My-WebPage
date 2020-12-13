@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-$main-color: #b04fff;
-$text-color: #13151f;
+$main-color: #7332a8;
+$text-color: #2b2b30;
 $rainbow: linear-gradient(90deg, rgb(21, 211, 214) 0%, rgb(71, 0, 202) 49%, rgba(255, 0, 251, 0.644) 98%);
 $white: rgb(226, 226, 226);
 $light-color: #676767;
@@ -27,17 +27,21 @@ $shadow-color2: #888;
   list-style: none;
 }
 
+main {
+  text-align: center;
+  color: $text-color;
+}
+
+footer {
+  background-color: #2a2927;
+}
+
 a {
   transition: all 0.3s ease 0s;
 
   &:hover {
     text-decoration: none;
   }
-}
-
-main {
-  text-align: center;
-  color: $text-color;
 }
 
 nav {
@@ -48,7 +52,7 @@ nav {
 .mobile-nav {
   background-color: white;
 
-  @include margin(80vw);
+  @include margin(80%);
   @include flex(space-between, row);
 
   button {
@@ -67,7 +71,7 @@ nav {
   background-position: 25%;
   background-repeat: no-repeat;
   border-bottom: 1px solid $main-color;
-  padding: 40px 45px 45px;
+  padding: 46px;
 
   .iconify {
     color: $main-color;
@@ -275,19 +279,10 @@ nav {
   color: $main-color;
 }
 
-footer {
-  background-color: #2a2927;
-  h2 {
-    color: $white;
-  }
-  a {
-    color: $light-color;
-  }
-}
-
 @media only screen and (min-width: 480px) {
   .desktop-nav {
     @include flex(space-around, row);
+
     ul {
       @include flex(space-between, row);
     }
