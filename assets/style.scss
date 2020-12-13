@@ -36,7 +36,6 @@ a {
 }
 
 main {
-  margin-top: 70px;
   text-align: center;
   color: $text-color;
 }
@@ -109,22 +108,23 @@ nav {
   @include flex(center, column);
 
   color: $white;
-  padding: 100px 45px 300px;
-  height: 750px;
+  padding: 0 30px;
+  height: 700px;
   background-image: url(/assets/Images/Galaxy-background.jpg);
   background-size: cover;
   background-attachment: fixed;
-  background-position: bottom;
+  background-repeat: no-repeat;
+  background-position: center;
 
   h1,
   h2 {
     font-weight: bold;
-    font-size: 45px;
+    font-size: 50px;
     text-shadow: 1px 1px 5px $text-color;
   }
 
   h2 {
-    font-size: 14px;
+    font-size: 15px;
     letter-spacing: 1px;
   }
 
@@ -190,7 +190,7 @@ nav {
   @include flex(center, column);
 
   h2 {
-    font-size: 38px;
+    font-size: 36px;
   }
 
   background-image: url(/assets/Images/Kael-background.jpg);
@@ -200,7 +200,7 @@ nav {
   height: 600px;
   color: $white;
   padding: 20px;
-  text-shadow: 1px 1px 5px $text-color;
+  text-shadow: 1px 1px 5px $main-color;
 }
 
 .fourth-sec {
@@ -259,10 +259,10 @@ nav {
   height: 750px;
   color: $white;
   padding: 20px;
-  text-shadow: 1px 1px 5px $text-color;
+  text-shadow: 1px 1px 5px $main-color;
 
   h2 {
-    font-size: 38px;
+    font-size: 36px;
   }
 }
 
@@ -275,12 +275,27 @@ nav {
   color: $main-color;
 }
 
-@media only screen and (min-width: 480px) {
-  .first-sec {
-    padding: 80px 34px 250px;
+footer {
+  background-color: #2a2927;
+  h2 {
+    color: $white;
+  }
+  a {
+    color: $light-color;
+  }
+}
 
+@media only screen and (min-width: 480px) {
+  .desktop-nav {
+    @include flex(space-around, row);
+    ul {
+      @include flex(space-between, row);
+    }
+  }
+
+  .first-sec {
     h1 {
-      font-size: 4.5rem;
+      font-size: 5rem;
     }
 
     h2 {
