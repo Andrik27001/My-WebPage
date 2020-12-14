@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 $main-color: #7332a8;
-$text-color: #2b2b30;
-$rainbow: linear-gradient(90deg, rgb(21, 211, 214) 0%, rgb(71, 0, 202) 49%, rgba(255, 0, 251, 0.644) 98%);
-$white: rgb(226, 226, 226);
-$light-color: #676767;
-$shadow-color2: #888;
+$text-color: #0d1117;
+$rainbow: linear-gradient(90deg, rgb(30, 218, 252) 0%, rgb(83, 20, 199) 45%, rgb(83, 20, 199) 55%, rgb(223, 78, 220) 98%);
+$white: #e7e7e7;
+$light-color: #6e6e6e;
 
 @mixin flex($content, $direction) {
   display: flex;
@@ -46,7 +45,7 @@ a {
 
 nav {
   background-color: white;
-  box-shadow: 0 1px 10px $shadow-color2;
+  box-shadow: 0 1px 10px $light-color;
 }
 
 .mobile-nav {
@@ -66,10 +65,11 @@ nav {
 }
 
 .nav-content {
-  background-image: url(/assets/Images/Galaxy-background2.jpg);
+  background: url(/assets/Images/Galaxy-background2.jpg);
   background-size: cover;
-  background-position: 30%;
+  background-position: 20%;
   padding: 46px;
+  border-bottom: 1px solid $main-color;
 
   .iconify {
     color: $main-color;
@@ -79,7 +79,7 @@ nav {
     @include flex(space-between, row);
 
     color: $white;
-    padding: 10px 0;
+    padding: 10px;
     border-bottom: 1px dotted $main-color;
   }
 
@@ -112,8 +112,8 @@ nav {
 
   color: $white;
   padding: 0 30px;
-  height: 700px;
-  background-image: radial-gradient(circle, rgba(119, 0, 255, 0) 0%, rgba(20, 0, 48, 0) 98%), url(/assets/Images/H84GwE.png);
+  height: 100vh;
+  background: url(/assets/Images/Galaxy-background.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -143,70 +143,69 @@ nav {
   color: transparent;
 }
 
+.second-sec {
+  padding: 50px 40px;
+}
 .second-sec-headers {
-  @include margin(80%);
-
-  padding: 70px 0 35px;
-
-  h1 {
-    line-height: 30px;
-    font-size: 1.5rem;
-  }
-
+  h1, 
   h2,
   h3 {
     line-height: 50px;
-    font-size: 2.2rem;
+    font-size: 36px;
+    padding: 16px;
+    margin: 0
   }
+  
+  h1 {
+    line-height: 30px;
+    font-size: 24px;
+  }
+
 }
 
 .feature-sec {
   @include flex(center, column);
-  @include margin(70%);
-
-  color: $light-color;
 
   h4 {
-    font-size: 1.1rem;
+    font-size: 18px;
     font-weight: bold;
     margin: 0;
   }
 
-  p {
-    padding: 0 0 20px;
-  }
-
   .iconify {
-    font-size: 35px;
-    width: 35px;
-    height: 35px;
-    margin: 0 3% 0 0;
+    font-size: 36px;
+    width: 36px;
+    height: 36px;
+    margin: 0 8% 0 0;
     color: $main-color;
   }
 }
-
+.features-container {
+  padding: 20px 0;
+}
 .features {
   @include flex(center, row);
+  padding: 0 0 12px;
 }
 
 .third-sec {
   @include flex(center, column);
-
-  h2 {
-    font-size: 36px;
-  }
-
-  background-image: url(/assets/Images/Kael-background.jpg);
+  padding: 50px 40px;
+  background: url(/assets/Images/Kael-background.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: right;
-  height: 600px;
+  height: 100vh;
   color: $white;
-  padding: 20px;
-  text-shadow: 1px 1px 5px $main-color;
+  text-shadow: 1px 1px 5px $text-color;
+  
+  h2 {
+    font-size: 36px;
+  }
 }
 
 .fourth-sec {
+  padding: 50px 40px;
   font-size: 20px;
 
   a {
@@ -216,7 +215,7 @@ nav {
   }
 
   h2 {
-    font-size: 35px;
+    font-size: 36px;
   }
 
   p {
@@ -230,19 +229,24 @@ nav {
   }
 }
 
-.boosters {
+.fifth-sec {
   @include flex(center, column);
-}
+  padding: 50px 40px;
+  background: url(/assets/Images/Alarak-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 25%;
+  height: 100vh;
+  color: $white;
+  text-shadow: 1px 1px 5px $text-color;
 
-.booster {
-  @include flex(space-around, column);
-
-  background-color: $main-color;
-  border-radius: 20px;
+  h2 {
+    font-size: 36px;
+  }
 }
 
 .main-buttons {
-  font-size: 0.9rem;
+  font-size: 14px;
   color: $white;
   background: $rainbow;
   padding: 15px 22px;
@@ -252,30 +256,13 @@ nav {
   letter-spacing: 2px;
 }
 
-.fifth-sec {
-  @include flex(center, column);
-
-  background-image: url(/assets/Images/Alarak-background.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 25%;
-  height: 750px;
-  color: $white;
-  padding: 20px;
-  text-shadow: 1px 1px 5px $main-color;
-
-  h2 {
-    font-size: 36px;
-  }
+.nav-content a:hover {
+  color: $main-color;
 }
 
 .fourth-sec a:hover {
   background-color: $main-color;
   color: $white;
-}
-
-.nav-content a:hover {
-  color: $main-color;
 }
 
 @media only screen and (min-width: 480px) {
@@ -284,16 +271,6 @@ nav {
 
     ul {
       @include flex(space-between, row);
-    }
-  }
-
-  .first-sec {
-    h1 {
-      font-size: 5rem;
-    }
-
-    h2 {
-      font-size: 1.5rem;
     }
   }
 }
