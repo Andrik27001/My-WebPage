@@ -146,21 +146,21 @@ nav {
 .second-sec {
   padding: 50px 40px;
 }
+
 .second-sec-headers {
-  h1, 
+  h1,
   h2,
   h3 {
     line-height: 50px;
     font-size: 36px;
     padding: 16px;
-    margin: 0
+    margin: 0;
   }
-  
+
   h1 {
     line-height: 30px;
     font-size: 24px;
   }
-
 }
 
 .feature-sec {
@@ -180,16 +180,20 @@ nav {
     color: $main-color;
   }
 }
+
 .features-container {
   padding: 20px 0;
 }
+
 .features {
   @include flex(center, row);
+
   padding: 0 0 12px;
 }
 
 .third-sec {
   @include flex(center, column);
+
   padding: 50px 40px;
   background: url(/assets/Images/Kael-background.jpg);
   background-size: cover;
@@ -198,7 +202,7 @@ nav {
   height: 100vh;
   color: $white;
   text-shadow: 1px 1px 5px $text-color;
-  
+
   h2 {
     font-size: 36px;
   }
@@ -231,6 +235,7 @@ nav {
 
 .fifth-sec {
   @include flex(center, column);
+
   padding: 50px 40px;
   background: url(/assets/Images/Alarak-background.jpg);
   background-size: cover;
