@@ -30,14 +30,6 @@ main {
   text-align: center;
   color: $text-color;
 }
-   
-footer {
-  padding: 50px 30px;
-  background-color: #2a2927;
-  h1, h2, a {
-    color: $white;
-  }
-}
 
 a {
   transition: all 0.3s ease 0s;
@@ -115,7 +107,7 @@ nav {
   @include flex(center, column);
 
   color: $white;
-  padding: 50px 30px;
+  padding: 60px 30px;
   height: 100vh;
   background: url(/assets/Images/Galaxy-background.jpg);
   background-size: cover;
@@ -148,7 +140,7 @@ nav {
 }
 
 .second-sec {
-  padding: 50px 30px;
+  padding: 60px 30px;
 }
 
 .second-sec-headers {
@@ -198,7 +190,7 @@ nav {
 .third-sec {
   @include flex(center, column);
 
-  padding: 50px 30px;
+  padding: 60px 30px;
   background: url(/assets/Images/Kael-background.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -213,7 +205,7 @@ nav {
 }
 
 .fourth-sec {
-  padding: 50px 30px;
+  padding: 60px 30px;
   font-size: 20px;
 
   a {
@@ -240,7 +232,7 @@ nav {
 .fifth-sec {
   @include flex(center, column);
 
-  padding: 50px 30px;
+  padding: 60px 30px;
   background: url(/assets/Images/Alarak-background.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -270,6 +262,17 @@ nav {
 
 .review-img {
   text-align: right;
+}
+
+.footer-container {
+  padding: 60px 30px;
+  background-color: #2a2927;
+
+  h1,
+  h2,
+  a {
+    color: $white;
+  }
 }
 
 .main-buttons {
