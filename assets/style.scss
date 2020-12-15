@@ -250,6 +250,24 @@ nav {
   }
 }
 
+.boosters {
+  text-align: left;
+}
+
+.booster {
+  background: $main-color;
+  border-radius: 25px;
+  height: 280px;
+  padding: 36px;
+  width: 100%;
+  color: $white;
+  font-weight: normal;
+}
+
+.review-img {
+  text-align: right;
+}
+
 .main-buttons {
   font-size: 14px;
   color: $white;
