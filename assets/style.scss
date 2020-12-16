@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 $main-color: #9932ee;
-$text-color: #0d1117;
+$text-color: #25272b;
 $rainbow: linear-gradient(90deg, rgb(30, 218, 252) 0%, rgb(83, 20, 199) 45%, rgb(83, 20, 199) 55%, rgb(223, 78, 220) 98%);
 $white: #e7e7e7;
 $light-color: #6e6e6e;
@@ -17,6 +17,8 @@ $light-color: #6e6e6e;
   margin: 0 auto;
   width: $width;
 }
+
+
 
 * {
   box-sizing: border-box;
@@ -58,6 +60,15 @@ nav {
     color: $text-color;
     font-size: 24px;
   }
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 34px;
+}
+
+.mobile-icons {
+  @include flex(center, row)
 }
 
 .nav-content {
