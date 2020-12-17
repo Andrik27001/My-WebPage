@@ -26,7 +26,7 @@ $light-color: #6e6e6e;
   list-style: none;
 }
 
-main {
+body {
   text-align: center;
   color: $text-color;
 }
@@ -270,6 +270,11 @@ nav {
   background-color: #2a2927;
   color: $light-color;
 
+  input {
+    padding: 10px;
+    border-radius: 10px;
+  }
+
   h1,
   h2 {
     font-size: 20px;
@@ -318,6 +323,28 @@ nav {
     color: #a00018;
     background: $white;
   }
+}
+
+.review-container {
+  @include flex(center, column);
+  width: 160px;
+  .iconify {
+    font-size: 18px;
+    margin: 0 0 5px 0
+  }
+  img {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+.footer-review {
+  font-size: 14px;
+  color: $white;
+  line-height: 22px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px 10px 0 0;
+  background: #55c064;
 }
 
 .rainbow-title {
