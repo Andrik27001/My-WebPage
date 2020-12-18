@@ -281,15 +281,17 @@ nav {
 
 .footer-links {
   line-height: 30px;
+
   a {
     display: block;
     font-size: 15px;
     color: $light-color;
-    }
+  }
 }
 
 .ubication {
   @include margin(50%);
+
   .iconify {
     font-size: 24px;
     margin: 10px;
@@ -299,6 +301,7 @@ nav {
 
 .footer-icons {
   @include margin(60%);
+
   .iconify {
     margin: 4px 2px;
     font-size: 50px;
@@ -340,6 +343,7 @@ nav {
 .review-container {
   @include flex(center, column);
   @include margin(60%);
+
   max-width: 160px;
 
   .iconify {
