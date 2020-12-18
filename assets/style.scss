@@ -267,25 +267,41 @@ nav {
 }
 
 .footer-container {
-  padding: 60px 30px;
+  padding: 20px 30px;
   background-color: #2a2927;
   color: $light-color;
 
-  h1,
   h2 {
+    padding: 40px 0 10px 0;
+    margin: 0;
     font-size: 20px;
     color: $white;
   }
+}
 
+.footer-links {
+  line-height: 30px;
   a {
+    display: block;
     font-size: 15px;
     color: $light-color;
+    }
+}
+
+.ubication {
+  @include margin(50%);
+  .iconify {
+    font-size: 24px;
+    margin: 10px;
+    color: $main-color;
   }
 }
 
 .footer-icons {
+  @include margin(60%);
   .iconify {
-    font-size: 48px;
+    margin: 4px 2px;
+    font-size: 50px;
     border-radius: 50%;
     color: $white;
   }
@@ -323,8 +339,8 @@ nav {
 
 .review-container {
   @include flex(center, column);
-
-  width: 160px;
+  @include margin(60%);
+  max-width: 160px;
 
   .iconify {
     font-size: 18px;
