@@ -343,9 +343,13 @@ nav {
 .footer-form {
   form {
     @include flex(center, column);
+
     width: 100%;
   }
-  input, textarea, button {
+
+  input,
+  textarea,
+  button {
     display: block;
     width: 100%;
     max-width: 300px;
@@ -353,10 +357,12 @@ nav {
     margin: 8px 0;
     border-radius: 10px;
     border: none;
+
     &::placeholder {
       color: $light-color;
     }
   }
+
   button {
     font-size: 17px;
     font-weight: bold;
