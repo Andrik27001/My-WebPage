@@ -373,6 +373,11 @@ nav {
   }
 }
 
+.payment-img {
+  width: 100%;
+  max-width: 400px;
+}
+
 .review-container {
   @include flex(center, column);
   @include margin(60%);
