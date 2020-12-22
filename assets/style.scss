@@ -69,6 +69,39 @@ nav {
   @include flex(center, row);
 }
 
+.footer-form {
+  form {
+    @include flex(center, column);
+
+    width: 100%;
+  }
+
+  input,
+  textarea,
+  button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: none;
+
+    &::placeholder {
+      color: $light-color;
+    }
+  }
+
+  button {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 17px;
+    margin: 14px 0;
+    background: $rainbow;
+    color: $white;
+  }
+}
+
 .nav-content {
   background: url(/assets/Images/Galaxy-background2.jpg);
   background-size: cover;
@@ -337,39 +370,6 @@ nav {
   .iconi-6 {
     color: #a00018;
     background: $white;
-  }
-}
-
-.footer-form {
-  form {
-    @include flex(center, column);
-
-    width: 100%;
-  }
-
-  input,
-  textarea,
-  button {
-    display: block;
-    width: 100%;
-    max-width: 300px;
-    padding: 10px;
-    margin: 8px 0;
-    border-radius: 10px;
-    border: none;
-
-    &::placeholder {
-      color: $light-color;
-    }
-  }
-
-  button {
-    font-size: 17px;
-    font-weight: bold;
-    padding: 17px;
-    margin: 14px 0;
-    background: $rainbow;
-    color: $white;
   }
 }
 
