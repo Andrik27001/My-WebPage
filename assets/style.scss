@@ -4,7 +4,7 @@ $main-color: #9932ee;
 $text-color: #25272b;
 $rainbow: linear-gradient(90deg, rgb(30, 218, 252) 0%, rgb(83, 20, 199) 45%, rgb(83, 20, 199) 55%, rgb(223, 78, 220) 98%);
 $white: #e7e7e7;
-$light-color: #6e6e6e;
+$light-color: #b3b3b3;
 
 @mixin flex($content, $direction) {
   display: flex;
@@ -73,7 +73,7 @@ nav {
   background: url(/assets/Images/Galaxy-background2.jpg);
   background-size: cover;
   background-position: 20%;
-  padding: 46px;
+  padding: 40px;
   border-bottom: 1px solid $main-color;
 
   .iconify {
@@ -84,7 +84,7 @@ nav {
     @include flex(space-between, row);
 
     color: $white;
-    padding: 10px;
+    padding: 12px;
     border-bottom: 1px dotted $main-color;
   }
 
@@ -267,7 +267,7 @@ nav {
 }
 
 .footer-container {
-  padding: 20px 30px;
+  padding: 20px 50px;
   background-color: #2a2927;
   color: $light-color;
 
@@ -300,7 +300,7 @@ nav {
 }
 
 .footer-icons {
-  @include margin(60%);
+  @include margin(80%);
 
   .iconify {
     margin: 4px 2px;
@@ -337,6 +337,33 @@ nav {
   .iconi-6 {
     color: #a00018;
     background: $white;
+  }
+}
+
+.footer-form {
+  form {
+    @include flex(center, column);
+    width: 100%;
+  }
+  input, textarea, button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: none;
+    &::placeholder {
+      color: $light-color;
+    }
+  }
+  button {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 17px;
+    margin: 14px 0;
+    background: $rainbow;
+    color: $white;
   }
 }
 
