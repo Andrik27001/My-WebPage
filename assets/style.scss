@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-$main-color: #9932ee;
+$main-color: #7539a7;
 $text-color: #25272b;
 $rainbow: linear-gradient(90deg, rgb(30, 218, 252) 0%, rgb(83, 20, 199) 45%, rgb(83, 20, 199) 55%, rgb(223, 78, 220) 98%);
 $white: #e7e7e7;
@@ -51,7 +51,7 @@ nav {
   @include flex(space-between, row);
 
   button {
-    margin-left: 14px;
+    margin-left: 14px
   }
 
   .iconify {
@@ -71,13 +71,12 @@ nav {
 
 .footer-form {
   form {
-    @include flex(center, column);
+  @include flex(center, column);
 
     width: 100%;
   }
 
-  input,
-  textarea,
+  input, textarea,
   button {
     display: block;
     width: 100%;
@@ -107,7 +106,6 @@ nav {
   background-size: cover;
   background-position: 20%;
   padding: 40px;
-  border-bottom: 1px solid $main-color;
 
   .iconify {
     color: $main-color;
@@ -118,7 +116,7 @@ nav {
 
     color: $white;
     padding: 12px;
-    border-bottom: 1px dotted $main-color;
+    border-bottom: 1px solid $main-color;
   }
 
   li {
@@ -438,4 +436,9 @@ nav {
       @include flex(space-between, row);
     }
   }
+}
+
+//delete this one
+button {
+  color: red;
 }
