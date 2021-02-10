@@ -377,8 +377,26 @@ nav {
   max-width: 400px;
 }
 
+.review-container {
+  @include flex(center, column);
+  @include margin(60%);
+
+  max-width: 150px;
+  padding: 40px 0;
+
+  .iconify {
+    font-size: 18px;
+    margin: 0 0 5px 0;
+  }
+
+  img {
+    border-radius: 0 0 6px 6px;
+  }
+}
+
 .footer-rights {
   @include flex(center, row);
+
   padding: 40px 0;
 
   .blizz img {
@@ -396,23 +414,6 @@ nav {
     margin-top: 5px;
     width: 100%;
     max-width: 130px;
-  }
-}
-
-.review-container {
-  @include flex(center, column);
-  @include margin(60%);
-
-  max-width: 150px;
-  padding: 40px 0;
-
-  .iconify {
-    font-size: 18px;
-    margin: 0 0 5px 0;
-  }
-
-  img {
-    border-radius: 0 0 6px 6px;
   }
 }
 
