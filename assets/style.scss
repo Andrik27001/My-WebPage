@@ -51,7 +51,7 @@ nav {
   @include flex(space-between, row);
 
   button {
-    margin-left: 14px
+    margin-left: 14px;
   }
 
   .iconify {
@@ -71,12 +71,13 @@ nav {
 
 .footer-form {
   form {
-  @include flex(center, column);
+    @include flex(center, column);
 
     width: 100%;
   }
 
-  input, textarea,
+  input,
+  textarea,
   button {
     display: block;
     width: 100%;
