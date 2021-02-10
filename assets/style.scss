@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+$main-color: #7539a7;
+$text-color: #25272b;
+$rainbow: linear-gradient(90deg, rgb(30, 218, 252) 0%, rgb(83, 20, 199) 45%, rgb(83, 20, 199) 55%, rgb(223, 78, 220) 98%);
+$white: #e7e7e7;
+$light-color: #b3b3b3;
+
+@mixin flex($content, $direction) {
+  display: flex;
+  align-items: center;
+  justify-content: $content;
+  flex-direction: $direction;
+}
+
+@mixin margin($width) {
+  margin: 0 auto;
+  width: $width;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  list-style: none;
+}
+
+body {
+  text-align: center;
+  color: $text-color;
+}
+
+a {
+  transition: all 0.3s ease 0s;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+nav {
+  background-color: white;
+  box-shadow: 0 1px 10px $light-color;
+}
+
+.mobile-nav {
+  background-color: white;
+
+  @include margin(80%);
+  @include flex(space-between, row);
+
+  button {
+    margin-left: 14px;
+  }
+
+  .iconify {
+    color: $text-color;
+    font-size: 24px;
+  }
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 34px;
+}
+
+.mobile-icons {
+  @include flex(center, row);
+}
+
+.footer-form {
+  form {
+    @include flex(center, column);
+
+    width: 100%;
+  }
+
+  input,
+  textarea,
+  button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: none;
+
+    &::placeholder {
+      color: $light-color;
+    }
+  }
+
+  button {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 17px;
+    margin: 14px 0;
+    background: $rainbow;
+    color: $white;
+  }
+}
+
+.nav-content {
+  background: url(/assets/Images/Galaxy-background2.jpg);
+  background-size: cover;
+  background-position: 20%;
+  padding: 40px;
+
+  .iconify {
+    color: $main-color;
+  }
+
+  a {
+    @include flex(space-between, row);
+
+    color: $white;
+    padding: 12px;
+    border-bottom: 1px solid $main-color;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  input {
+    color: $white;
+    border: none;
+    width: 100%;
+    margin: 15px 0 0 0;
+    padding: 15px 15px 15px 45px;
+    border-radius: 5px;
+    background-color: #0000005b;
+    background-image: url(/assets/Images/Rinnegan.png);
+    background-size: 30px;
+    background-position: 8px center;
+    background-repeat: no-repeat;
+
+    &::placeholder,
+    &:placeholder-shown {
+      color: $main-color;
+    }
+  }
+}
+
+.first-sec {
+  @include flex(center, column);
+
+  color: $white;
+  padding: 60px 30px;
+  height: 100vh;
+  background: url(/assets/Images/Galaxy-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  h1,
+  h2 {
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 1px 1px 5px $text-color;
+  }
+
+  h2 {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  span {
+    text-shadow: none;
+  }
+}
+
+.second-sec {
+  padding: 60px 30px;
+}
+
+.second-sec-headers {
+  h1,
+  h2,
+  h3 {
+    line-height: 50px;
+    font-size: 36px;
+    padding: 16px;
+    margin: 0;
+  }
+
+  h1 {
+    line-height: 30px;
+    font-size: 24px;
+  }
+}
+
+.feature-sec {
+  @include flex(center, column);
+
+  h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .iconify {
+    font-size: 36px;
+    width: 36px;
+    height: 36px;
+    margin: 0 8% 0 0;
+    color: $main-color;
+  }
+}
+
+.features-container {
+  padding: 20px 0;
+}
+
+.features {
+  @include flex(center, row);
+
+  padding: 0 0 12px;
+}
+
+.third-sec {
+  @include flex(center, column);
+
+  padding: 60px 30px;
+  background: url(/assets/Images/Kael-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: right;
+  height: 100vh;
+  color: $white;
+  text-shadow: 1px 1px 5px $text-color;
+
+  h2 {
+    font-size: 36px;
+  }
+}
+
+.fourth-sec {
+  padding: 60px 30px;
+  font-size: 20px;
+
+  a {
+    font-weight: normal;
+    font-style: italic;
+    color: $text-color;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  p {
+    font-weight: bold;
+  }
+}
+
+.rating {
+  span {
+    font-weight: normal;
+  }
+}
+
+.fifth-sec {
+  @include flex(center, column);
+
+  padding: 60px 30px;
+  background: url(/assets/Images/Alarak-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 25%;
+  height: 100vh;
+  color: $white;
+  text-shadow: 1px 1px 5px $text-color;
+
+  h2 {
+    font-size: 36px;
+  }
+}
+
+.boosters {
+  text-align: left;
+}
+
+.booster {
+  background: $main-color;
+  border-radius: 25px;
+  height: 280px;
+  padding: 36px;
+  width: 100%;
+  color: $white;
+  font-weight: normal;
+}
+
+.review-img {
+  text-align: right;
+}
+
+.footer-container {
+  padding: 20px 50px;
+  background-color: #2a2927;
+  color: $light-color;
+
+  h2 {
+    padding: 40px 0 10px 0;
+    margin: 0;
+    font-size: 20px;
+    color: $white;
+  }
+}
+
+.footer-links {
+  line-height: 30px;
+
+  a {
+    display: block;
+    font-size: 15px;
+    color: $light-color;
+  }
+}
+
+.ubication {
+  @include margin(50%);
+
+  .iconify {
+    font-size: 24px;
+    margin: 10px;
+    color: $main-color;
+  }
+}
+
+.footer-icons {
+  @include margin(80%);
+
+  .iconify {
+    margin: 4px 2px;
+    font-size: 50px;
+    border-radius: 50%;
+    color: $white;
+  }
+
+  .iconi-1 {
+    color: #3b5998;
+    background: $white;
+  }
+
+  .iconi-2 {
+    color: #00acee;
+    background: $white;
+  }
+
+  .iconi-3 {
+    color: #c4302b;
+    background: $white;
+  }
+
+  .iconi-4 {
+    color: #dd4b39;
+    background: $white;
+  }
+
+  .iconi-5 {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    border: 1px solid $white;
+  }
+
+  .iconi-6 {
+    color: #a00018;
+    background: $white;
+  }
+}
+
+.payment-img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.review-container {
+  @include flex(center, column);
+  @include margin(60%);
+
+  max-width: 160px;
+
+  .iconify {
+    font-size: 18px;
+    margin: 0 0 5px 0;
+  }
+
+  img {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+.footer-review {
+  font-size: 14px;
+  color: $white;
+  line-height: 22px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px 10px 0 0;
+  background: #55c064;
+}
+
+.rainbow-title {
+  background: $rainbow;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.main-buttons {
+  font-size: 14px;
+  color: $white;
+  background: $rainbow;
+  padding: 15px 22px;
+  margin: 16px 0;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 2px;
+}
+
+.nav-content a:hover {
+  color: $main-color;
+}
+
+.fourth-sec a:hover {
+  background: $rainbow;
+}
+
+@media only screen and (min-width: 480px) {
+  .desktop-nav {
+    @include flex(space-around, row);
+
+    ul {
+      @include flex(space-between, row);
+    }
+  }
+}

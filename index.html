@@ -4,84 +4,191 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="./dist/css/style.css">
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-  <title>Riot Boost</title>
+  <title>ParadoX Boost</title>
 </head>
 <body>
   <header>
-    <nav>
-      <div>
-        <img src="./assets/Images/Logo.png" width="120" alt="Logo">
-      </div>
+    <div class="fixed-top">
+      <nav class="d-md-none">
+        <div class="mobile-nav">
+          <a href="index.html"><img src="./assets/Images/Logo.png" alt="Logo" width="65"></a>
+          <div class="mobile-icons">
+            <a href="#"><span class="iconify icon-1" data-icon="fa:shopping-cart" data-inline="false"></span></a>
+            <button class="navbar-toggler p-1" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="iconify" data-icon="fa:bars" data-inline="false"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="accordion nav-content" id="accordionExample">
+          <div class="collapse-content">
+            <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Our Services<span class="iconify" data-icon="eva:arrow-ios-downward-fill" data-inline="false"></span>
+            </a>
+            <div id="collapseOne" class="collapse" data-parent="#accordionExample">
+              <div>
+                <ul>
+                  <li><a href="#">Solo & Duo Storm League Boosting</a></li>
+                  <li><a href="#">Hero Leveling</a></li>
+                  <li><a href="#">Coaching</a></li>
+                  <li><a href="#">Account Shop</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-      <div>
-        <ul>
-          <li>OUR SERVICES</li>
-          <li>REVIEWS</li>
-          <li>ABOUT US</li>
-          <li>HALL OF FAME</li>
-          <li>MORE GAMES</li>
-          <li>CONTACT</li>
-          <li>LOGIN</li>
-        </ul>
+          <div class="collapse-content">
+            <a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              About Us<span class="iconify" data-icon="eva:arrow-ios-downward-fill" data-inline="false"></span>
+            </a>
+            <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+              <div>
+                <ul>
+                  <li><a href="#">Why Us?</a>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Terms of Use</a></li>
+                  <li><a href="#">Refund Policy</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="collapse-content">
+            <a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+              More Games<span class="iconify" data-icon="eva:arrow-ios-downward-fill" data-inline="false"></span>
+            </a>
+            <div id="collapseThree" class="collapse" data-parent="#accordionExample">
+              <div>
+                <ul>
+                  <li><a href="#">Apex Legends</a></li>
+                  <li><a href="#">LoL</a></li>
+                  <li><a href="#">Overwatch</a></li>
+                  <li><a href="#">CoD: Modern Warfare</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="collapse-content">
+            <a href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+              Contact<span class="iconify" data-icon="eva:arrow-ios-downward-fill" data-inline="false"></span>
+            </a>
+            <div id="collapseFour" class="collapse" data-parent="#accordionExample">
+              <div>
+                <ul>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Become a Booster</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <a href="#">Reviews</a>
+          <a href="#">Hall of Fame</a>
+          <a href="#">Login</a>
+
+          <form method="GET" action="#">
+            <input type="text" placeholder="Search...">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <nav class="d-none d-md-block">
+      <div class="desktop-nav">
+        <div>
+          <img src="./assets/Images/Logo.png" width="100" alt="Logo">
+        </div>
+        <div>
+          <ul>
+            <li>OUR SERVICES</li>
+            <li>REVIEWS</li>
+            <li>ABOUT US</li>
+            <li>HALL OF FAME</li>
+            <li>MORE GAMES</li>
+            <li>CONTACT</li>
+            <li>LOGIN</li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
 
   <main>
     <section>
-      <div>
-        <h1>Boosting Corporation</h1>
-        <h2>The <span>Premium</span> Heroes Boosting Experience</h2>
+      <div class="first-sec">
+        <div>
+          <h1><span class="rainbow-title">ParadoX</span>Boost</h1>
+          <h2>The <span class="rainbow-title">Premium</span> Heroes Boosting Experience</h2>
+        </div>
 
         <form method="GET" action="#">
-          <button type="submit">BUY PREMIUM STORM LEAGUE BOOSTING</button>
+          <button class="main-buttons" type="submit">BUY PREMIUM STORM LEAGUE BOOSTING</button>
         </form>
 
         <form method="GET" action="#">
-          <button type="submit">BOOK PROFESSIONAL COACHING</button>
+          <button class="main-buttons" type="submit">BOOK PROFESSIONAL COACHING</button>
         </form>
       </div>
     </section>
 
     <section>
-      <div>
-        <h1>PREMIUM HEROES OF THE STORM BOOSTING SERVICE</h1>
-        <h2>SOLO & DUO BOOSTING AVAILABLE IN ALL REGIONS</h2>
-        <h3>Why Hundreds Of Happy Customers Have Chosen Us</h3>
+      <div class="second-sec">
+        <div class="second-sec-headers">
+          <h1>PREMIUM HEROES OF THE STORM BOOSTING SERVICE</h1>
+          <h2 class="rainbow-title">SOLO & DUO BOOSTING AVAILABLE IN ALL REGIONS</h2>
+          <h3>Why Hundreds Of Happy Customers Have Chosen Us</h3>
+        </div>
 
-        <div>
-          <div>
-            <h4>PRICE TO QUALITY RATIO</h4>
-            <p>
+        <div class="feature-sec">
+          <div class="features-container">
+            <div class="features">
+              <span class="iconify" data-icon="fa-solid:euro-sign" data-inline="false"></span>
+              <h4 class="rainbow-title">PRICE TO QUALITY RATIO</h4>
+            </div>
+            <div>
               Maintaining a Premium HotS boosting service status while keeping the prices affordable for everyone in need of high quality Heroes of the Storm boosting is our highest priority.
-            </p>
+            </div>
           </div>
 
-          <div>
-            <h4>SAFETY AND ANONYMITY</h4>
-            <p>
+          <div class="features-container">
+            <div class="features">
+              <span class="iconify" data-icon="bx:bxs-lock-alt" data-inline="false"></span>
+              <h4 class="rainbow-title"> SAFETY AND ANONYMITY</h4>
+            </div>
+            <div>
               With us, your payments are 100% safe, just like your identity. We do not talk to your friends while the HotS boost is ongoing or share any private info. Boosters use VPN services to make your account immune to bans.
-            </p>
+            </div>
           </div>
 
-          <div>
-            <h4>7 DAYS A WEEK SUPPORT</h4>
-            <p>
+          <div class="features-container">
+            <div class="features">
+              <span class="iconify" data-icon="fa-solid:users" data-inline="false"></span>
+              <h4 class="rainbow-title">7 DAYS A WEEK SUPPORT</h4>
+            </div>
+            <div>
               Our professional customer care team is here for you every day via multiple contact methods to answer any questions. You are also able to chat directly with your booster and track your ongoing order.
-            </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section>
-      <div>OVER 4000 ORDERS COMPLETED 98% SATISFACTION RATE</div>
+      <div class="third-sec">
+        <h2 class="d-md-none">OVER 4000 ORDERS COMPLETED 98% SATISFACTION RATE.</h2>
+        <h2 class="d-none d-md-block">OVER 4000 ORDERS COMPLETED</h2>
+        <h2 class="d-none d-md-block">98% SATISFACTION RATE.</h2>
+      </div>
     </section>
 
     <section>
-      <div>
+      <div class="fourth-sec">
         <div>
           <h2>Find Out Why Customers ❤️ Us</h2>
           <p>
@@ -91,30 +198,24 @@
             <a href="https://na.leagueoflegends.com/es-es/">The boosting service was quick to complete, affordable and the support and updates along the way were
             excellent. So are Boosting Factory legit? Yes! We highly recommend them.</a> – LoL-Smurfs.com
           </p>
-          <ul>
-            <li>
+          <div class="rating">
+            <p>
               <span class="iconify" data-icon="vaadin:star" data-inline="false"></span>
               <span class="iconify" data-icon="vaadin:star" data-inline="false"></span>
               <span class="iconify" data-icon="vaadin:star" data-inline="false"></span>
               <span class="iconify" data-icon="vaadin:star" data-inline="false"></span>
               <span class="iconify" data-icon="vaadin:star-half-left" data-inline="false"></span>
-            </li>
-
-            <li>
-              4,9 Rating
-            </li>
-
-            <li>
-              295 Reviews
-            </li>
-          </ul>
+              4,9<span> Rating</span> ·
+              295<span> Reviews</span>
+            </p>
+          </div>
         </div>
 
-        <div>
-          <div>
-            <h3>AVIVCOHEN97</h3>
-            <p>very good services</p>
-            <div>
+        <div class="boosters">
+          <div class="booster">
+            <h4>AVIVCOHEN97</h4>
+            <div class="review">very good services</div>
+            <div class="stars">
               <span class="iconify" data-icon="vaadin:star" data-inline="false"></span>
               <span class="iconify" data-icon="vaadin:star" data-inline="false"></span>
               <span class="iconify" data-icon="vaadin:star" data-inline="false"></span>
@@ -123,10 +224,10 @@
             </div>
           </div>
 
-          <div>
-            <h3>JlSandin</h3>
-            <p>Second time using service. Haven't been disappointed =)</p>
-            <div>
+          <div class="booster">
+            <h4>JlSandin</h4>
+            <div class="review">Second time using service. Haven't been disappointed =)</div>
+            <div class="stars">
               <span class="iconify" data-icon="vaadin:star" data-inline="false"></span>
               <span class="iconify" data-icon="vaadin:star" data-inline="false"></span>
               <span class="iconify" data-icon="vaadin:star" data-inline="false"></span>
@@ -135,10 +236,10 @@
             </div>
           </div>
 
-          <div>
-            <h3>Warblo</h3>
-            <p>Very friendly, easy to use, realy quick completion. would recommend</p>
-            <div>
+          <div class="booster">
+            <h4>Warblo</h4>
+            <div class="review">Very friendly, easy to use, realy quick completion. would recommend</div>
+            <div class="stars">
               <span class="iconify" data-icon="vaadin:star" data-inline="false"></span>
               <span class="iconify" data-icon="vaadin:star" data-inline="false"></span>
               <span class="iconify" data-icon="vaadin:star" data-inline="false"></span>
@@ -147,10 +248,10 @@
             </div>
           </div>
 
-          <div>
-            <h3>MRUNS33</h3>
-            <p>Great service. Blurr was amazing</p>
-            <div>
+          <div class="booster">
+            <h4>MRUNS33</h4>
+            <div class="review">Great service. Blurr was amazing</div>
+            <div class="stars">
               <span class="iconify" data-icon="vaadin:star" data-inline="false"></span>
               <span class="iconify" data-icon="vaadin:star" data-inline="false"></span>
               <span class="iconify" data-icon="vaadin:star" data-inline="false"></span>
@@ -160,125 +261,120 @@
           </div>
         </div>
 
-        <div>
-          <img src="./assets/Images/Reviews-logo.png" alt="Reviews Logo">
+        <div class="review-img">
+          <img src="./assets/Images/Reviews-logo.png" width="145" alt="Reviews Logo">
         </div>
       </div>
     </section>
 
     <section>
-      <div>
-        <div>GET THE DIVISION YOU DESERVE TODAY</div>
+      <div class="fifth-sec">
+        <h2>GET THE DIVISION YOU DESERVE TODAY.</h2>
 
         <form method="GET" action="#">
-          <button type="submit">GET STARTED</button>
+          <button class="main-buttons" type="submit">GET STARTED</button>
         </form>
       </div>
     </section>
   </main>
-  <footer>                                  
-    <section>
-      <div>
+  <footer>
+    <div class="footer-container">                                 
+      <section>
         <div>
-          <div>
-            <h3>PAGES</h3>
-            <ul>
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">WHY US?</a></li>
-              <li><a href="#">REVIEWS</a></li>
-              <li><a href="#">BLOG</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">HALL OF FAME</a></li>
-              <li><a href="#">LOGIN</a></li>
-            </ul>
+          <div class="footer-links">
+            <div>
+              <h2>PAGES</h2>
+              <a href="#">HOME</a>
+              <a href="#">WHY US?</a>
+              <a href="#">REVIEWS</a>
+              <a href="#">BLOG</a>
+              <a href="#">FAQ</a>
+              <a href="#">HALL OF FAME</a>
+              <a href="#">LOGIN</a>
+            </div>
+
+            <div>
+              <h2>SERVICES</h2>
+              <a href="#">SOLO HERO LEAGUE BOOSTING</a>
+              <a href="#">SOLO & DUO TEAM LEAGUE BOOSTING</a>
+              <a href="#">HERO LEVELING</a>
+              <a href="#">COACHING</a>
+              <a href="#">ACCOUNT SHOP</a>
+            </div>
+
+            <div>
+              <h2>MORE GAMES</h2>
+              <a href="#">OVERWATCH</a>
+              <a href="#">LOL</a>
+              <a href="#">APEX LEGENDS</a>
+            </div>
+
+            <div>
+              <h2>SUPPORT</h2>
+              <a href="#">CONTACT US</a>
+              <a href="#">BECOME A BOOSTER</a>
+              <a href="#">TERMS OF USE</a>
+              <a href="#">REFUND POLICY</a>
+              <a href="#">PRIVACY POLICY</a>
+              <div class="ubication"><span class="iconify" data-icon="vaadin:map-marker" data-inline="false"></span><a href="#">BALOKOVICEVA 51, 10020 ZAGREB, CROATIA</a></div>
+            </div>
           </div>
 
           <div>
-            <h3>SERVICES</h3>
-            <ul>
-              <li><a href="#">SOLO HERO LEAGUE BOOSTING</a></li>
-              <li><a href="#">SOLO & DUO TEAM LEAGUE BOOSTING</a></li>
-              <li><a href="#">HERO LEVELING</a></li>
-              <li><a href="#">COACHING</a></li>
-              <li><a href="#">ACCOUNT SHOP</a></li>
-            </ul>
+            <h2>CONNECT WITH US</h2>
+            <div class="footer-icons">
+              <span class="iconify iconi-1" data-icon="entypo-social:facebook-with-circle" data-inline="false"></span>
+              <span class="iconify iconi-2" data-icon="entypo-social:twitter-with-circle" data-inline="false"></span>
+              <span class="iconify iconi-3" data-icon="entypo-social:youtube-with-circle" data-inline="false"></span>
+              <span class="iconify iconi-4" data-icon="entypo-social:google-with-circle" data-inline="false"></span>
+              <span class="iconify iconi-5" data-icon="la:instagram" data-inline="false"></span>
+              <span class="iconify iconi-6" data-icon="entypo-social:pinterest-with-circle" data-inline="false"></span>
+            </div>
+
+            <div>
+              <h2>PAYMENT METHODS</h2>
+              <img class="payment-img" src="./assets/Images/payment-methods.png" alt="Payment Methods">
+            </div>
           </div>
 
-          <div>
-            <h3>MORE GAMES</h3>
-            <ul>
-              <li><a href="#">OVERWATCH</a></li>
-              <li><a href="#">LOL</a></li>
-              <li><a href="#">APEX LEGENDS</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3>SUPPORT</h3>
-            <ul>
-              <li><a href="#">CONTACT US</a></li>
-              <li><a href="#">BECOME A BOOSTER</a></li>
-              <li><a href="#">TERMS OF USE</a></li>
-              <li><a href="#">REFUND POLICY</a></li>
-              <li><a href="#">PRIVACY POLICY</a></li>
-              <li><a href="#">BALOKOVICEVA 51, 10020 ZAGREB, CROATIA</a></li>
-            </ul>
+          <div class="footer-form">
+            <h2>WE'D LOVE TO HEAR FROM YOU</h2>
+            <form method="GET" action="#">
+              <input type="text" placeholder="Your Name (required)">
+              <input type="email" placeholder="Your Email (required)">
+              <textarea name="message" id="#" cols="30" rows="10" placeholder="Your Message"></textarea>
+              <button type="submit">SEND A MESSAGE</button>
+            </form>
           </div>
         </div>
+      </section>
 
+      <section>
+        <h1><span class="rainbow-title">ParadoX</span>Boost</h1>
+        <img src="./assets/Images/Logo.png" width="150" alt="Logo">
         <div>
-          <div>
-            <h3>CONNECT WITH US</h3>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
+          <p>All rights reserved.©<br>2015-2020 Boosting Factory.</p>
+          <img src="./assets/Images/ssl-secure.png" width="150" alt="SSL-Secure">
+        </div>
+        <p>
+          Boosting Factory isn’t endorsed or in any way affiliated with Blizzard Entertainment or Riot Games and doesn’t reflect the views or opinions of anyone officially involved in producing or managing Heroes of the Storm, Overwatch and League of Legends. All trademarks and logos belong to their respective owners. All submitted art content remains copyright of its original copyright holder.
+        </p>
+        <div class="review-container">
+          <div class="footer-review">
+            <div>
+              <span class="iconify" data-icon="vaadin:star" data-inline="false"></span>
+              <span class="iconify" data-icon="vaadin:star" data-inline="false"></span>
+              <span class="iconify" data-icon="vaadin:star" data-inline="false"></span>
+              <span class="iconify" data-icon="vaadin:star" data-inline="false"></span>
+              <span class="iconify" data-icon="vaadin:star" data-inline="false"></span>
+            </div>
+            <div>4.89 Average</div>
+            <div>1636 Reviews</div>
           </div>
-
-          <div>
-            <h3>PAYMENT METHODS</h3>
-            <img src="./assets/Images/payment-methods.png" alt="Payment Methods">
-          </div>
+          <img class="w-100" src="./assets/Images/Reviews-logo.png" alt="Reviews Logo">
         </div>
-
-        <div>
-          <h3>WE'D LOVE TO HEAR FROM YOU</h3>
-          <form method="GET" action="#">
-            <input type="text" placeholder="Your Name (required)">
-            <input type="email" placeholder="Your Email (required)">
-            <textarea name="message" id="#" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <button type="submit">SEND A MESSAGE</button>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <img src="./assets/Images/Logo.png" width="120" alt="Logo">
-      <div>
-        <p>All rights reserved.©<br>2015-2020 Boosting Factory.</p>
-        <img src="./assets/Images/ssl-secure.png" alt="SSL-Secure">
-      </div>
-      <p>
-        Boosting Factory isn’t endorsed or in any way affiliated with Blizzard Entertainment or Riot Games and doesn’t reflect the views or opinions of anyone officially involved in producing or managing Heroes of the Storm, Overwatch and League of Legends. All trademarks and logos belong to their respective owners. All submitted art content remains copyright of its original copyright holder.
-      </p>
-      <div>
-        <div>
-          <span class="iconify" data-icon="vaadin:star" data-inline="false"></span>
-          <span class="iconify" data-icon="vaadin:star" data-inline="false"></span>
-          <span class="iconify" data-icon="vaadin:star" data-inline="false"></span>
-          <span class="iconify" data-icon="vaadin:star" data-inline="false"></span>
-          <span class="iconify" data-icon="vaadin:star" data-inline="false"></span>
-          <p>4.89 Average 1636 Reviews</p>
-        </div>
-        <div>
-          <img src="./assets/Images/Reviews-logo.png" alt="Reviews Logo">
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
