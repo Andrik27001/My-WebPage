@@ -4,7 +4,7 @@ $main-color: #7539a7;
 $text-color: #25272b;
 $rainbow: linear-gradient(90deg, rgb(30, 218, 252) 0%, rgb(83, 20, 199) 45%, rgb(83, 20, 199) 55%, rgb(223, 78, 220) 98%);
 $white: #e7e7e7;
-$light-color: #b3b3b3;
+$light-color: #6d6d6d;
 
 @mixin flex($content, $direction) {
   display: flex;
@@ -74,6 +74,7 @@ nav {
     @include flex(center, column);
 
     width: 100%;
+    padding: 0 0 30px 0;
   }
 
   input,
@@ -299,7 +300,7 @@ nav {
 }
 
 .footer-container {
-  padding: 20px 50px;
+  padding: 20px 25px;
   background-color: #2a2927;
   color: $light-color;
 
@@ -375,6 +376,29 @@ nav {
 .payment-img {
   width: 100%;
   max-width: 400px;
+}
+
+.footer-rights {
+  @include flex(center, row);
+  padding: 30px 0;
+  border-top: 1px solid $light-color;
+
+  .blizz img {
+    padding: 0 20px 0 0;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .r-right {
+    padding: 0 0 0 20px;
+    border-left: 1px solid $light-color;
+  }
+
+  .r-right img {
+    margin-top: 5px;
+    width: 100%;
+    max-width: 130px;
+  }
 }
 
 .review-container {
